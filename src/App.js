@@ -21,10 +21,7 @@ function App() {
   const handleChange = async () => {
     const options = {
       method: 'GET',
-      headers: {
-        'X-RapidAPI-Key': '66a8b6d81emsh798551a4ab13e56p1e20b9jsna74896fddd71',
-        'X-RapidAPI-Host': 'deezerdevs-deezer.p.rapidapi.com'
-      }
+      key: '.env',
     };
     const result = await search(name, options);
     setListMusic(result.data);
